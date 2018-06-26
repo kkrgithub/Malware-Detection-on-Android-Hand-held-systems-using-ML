@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kranthi.algotest.MainActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button android:id="@+id/run" android:text="View"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:id="@+id/button4" />
+            <Spinner android:id="@+id/toDump"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button android:id="@+id/save" android:text="Save in File"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" android:visibility="gone" />
+            <EditText android:id="@+id/filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/output"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>
